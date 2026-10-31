@@ -1,6 +1,5 @@
-frontend:
-  replicaCount: 1
-  image:
-    name: binitmaharjan/student-ui
-    tag: "2"
+replicaCount: 1
+image:
+  name: binitmaharjan/student-ui
+  tag: "2"
   

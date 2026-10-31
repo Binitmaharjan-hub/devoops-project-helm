@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: backend-deployment
 spec:
-  replicas: {{ .Values.backend.replicaCount }}
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
       app: backend
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: "{{ .Values.backend.image.name }}:{{ .Values.backend.image.tag }}"
+          image: "{{ .Values.image.name }}:{{ .Values.image.tag }}"
           env:
             - name: DB_HOST
               valueFrom:
