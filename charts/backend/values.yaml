@@ -1,5 +1,4 @@
-backend:
-  replicaCount: 1
-  image:
-    name: binitmaharjan/student-backend
-    tag: "2"
+replicaCount: 1
+image:
+  name: binitmaharjan/student-backend
+  tag: "2"
