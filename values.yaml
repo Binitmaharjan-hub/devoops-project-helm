@@ -1,11 +1,11 @@
 frontend:
-  replicaCount: 1
+  replicaCount: 2
   image:
     name: binitmaharjan/student-ui
     tag: "2"
 
 backend:
-  replicaCount: 1
+  replicaCount: 2
   image:
     name: binitmaharjan/student-backend
     tag: "2"
